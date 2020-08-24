@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counting Sort</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <section class="top-section">
+            <h1 class="main-heading">Counting Sort</h1>
+        </section>
+        <section class="cases best-case">
+    <h1 class="green">Best Case</h1>
+    <div class="main">
+      <h4 class="">Enter 5 numbers</h4>
+      <div class="">
+        <form class="form-data form1">
+          <div class="form-group col-sm-1 col-sm-offset-1">
+            <input type="text" class="form-control" id="num1" placeholder="num" value="1">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num2" placeholder="num" value="2">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num3" placeholder="num" value="3">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num4" placeholder="num" value="4">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num5" placeholder="num" value="5">
+          </div>
+        </form>
+        <div class="sort-section">
+            <p id="sort1" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+            <p class="comparison-count1"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>
+        </div>
+      </div>
+    
+    </div>
+    <div class="main">
+      <h4 class="">Enter 10 numbers</h4>
+      <div class="">
+        <form class="form-data form2">
+          <div class="form-group col-sm-1 col-sm-offset-1">
+            <input type="text" class="form-control" id="num11" placeholder="num" value="1">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num12" placeholder="num" value="2">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num13" placeholder="num" value="3">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num14" placeholder="num" value="4">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num15" placeholder="num" value="5">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num16" placeholder="num" value="6">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num17" placeholder="num" value="7">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num18" placeholder="num" value="8">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num19" placeholder="num" value="9">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num20" placeholder="num" value="10">
+          </div>      
+        </form>
+        <div class="sort-section">
+        <p id="sort2" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+        <p class="comparison-count2"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p> </div>   
+      </div>
+    </div>
+    <div class="main">
+      <h4 class="">Enter 15 numbers</h4>
+      <div class="">
+        <form class="form-data form3">
+          <div class="form-group col-sm-1 col-sm-offset-1">
+            <input type="text" class="form-control" id="num21" placeholder="num" value="1">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num22" placeholder="num" value="2">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num23" placeholder="num" value="3">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num24" placeholder="num" value="4">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num25" placeholder="num" value="5">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num26" placeholder="num" value="6">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num27" placeholder="num" value="7">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num28" placeholder="num" value="8">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num29" placeholder="num" value="9">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num30" placeholder="num" value="10">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num31" placeholder="num" value="11">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num32" placeholder="num" value="12">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num33" placeholder="num" value="13">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num34" placeholder="num" value="14">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num35" placeholder="num" value="15">
+          </div>        
+        </form>
+        <div class="sort-section">
+        <p id="sort3" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+        <p class="comparison-count3"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>   
+        </div> 
+      </div>
+    </div>
+    <div class="main">
+      <h4 class="">Enter 20 numbers</h4>
+      <div class="">
+        <form class="form-data form4">
+          <div class="form-group col-sm-1 col-sm-offset-1">
+            <input type="text" class="form-control" id="num41" placeholder="num" value="1">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num42" placeholder="num" value="2">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num43" placeholder="num" value="3">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num44" placeholder="num" value="4">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num45" placeholder="num" value="5">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num46" placeholder="num" value="6">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num47" placeholder="num" value="7">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num48" placeholder="num" value="8">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num49" placeholder="num" value="9">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num50" placeholder="num" value="10">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num51" placeholder="num" value="11">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num52" placeholder="num" value="12">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num53" placeholder="num" value="13">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num54" placeholder="num" value="14">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num55" placeholder="num" value="15">
+          </div>    
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num56" placeholder="num" value="16">
+          </div> 
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num57" placeholder="num" value="17">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num58" placeholder="num" value="18">
+          </div> 
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num59" placeholder="num" value="19">
+          </div> 
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num60" placeholder="num" value="20">
+          </div>       
+        </form>
+        <div class="sort-section">
+        <p id="sort4" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+        <p class="comparison-count4"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>   
+        </div> 
+      </div>
+    </div>
+    <div class="main">
+      <h4 class="">Enter 25 numbers</h4>
+      <div class="">
+        <form class="form-data form5">
+          <div class="form-group col-sm-1 col-sm-offset-1">
+            <input type="text" class="form-control" id="num71" placeholder="num" value="1">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num72" placeholder="num" value="2">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num73" placeholder="num" value="3">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num74" placeholder="num" value="4">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num75" placeholder="num" value="5">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num76" placeholder="num" value="6">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num77" placeholder="num" value="7">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num78" placeholder="num" value="8">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num79" placeholder="num" value="9">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num80" placeholder="num" value="10">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num81" placeholder="num" value="11">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num82" placeholder="num" value="12">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num83" placeholder="num" value="13">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num84" placeholder="num" value="14">
+          </div>  
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num85" placeholder="num" value="15">
+          </div>    
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num86" placeholder="num" value="16">
+          </div> 
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num87" placeholder="num" value="17">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num88" placeholder="num" value="18">
+          </div> 
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num89" placeholder="num" value="19">
+          </div> 
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num90" placeholder="num" value="20">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num91" placeholder="num" value="21">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num92" placeholder="num" value="22">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num93" placeholder="num" value="23">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num94" placeholder="num" value="24">
+          </div>
+          <div class="form-group col-sm-1">
+            <input type="text" class="form-control" id="num95" placeholder="num" value="25">
+          </div>      
+        </form>
+        <div class="sort-section">
+        <p id="sort5" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+        <p class="comparison-count5"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>
+        </div>    
+      </div>
+    </div>
+</section>
+<section class="cases average-case">
+  <h1 class="blue">Average Case</h1>
+  <div class="main">
+    <h4 class="">Enter 5 numbers</h4>
+    <div class="">
+      <form class="form-data form6">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num1" placeholder="num" value="3">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num2" placeholder="num" value="8">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num3" placeholder="num" value="2">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num4" placeholder="num" value="6">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num5" placeholder="num" value="9">
+        </div>
+      </form>
+      <div class="sort-section">
+      <p id="sort6" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count6"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>
+      </div>
+    </div>
+  
+  </div>
+  <div class="main">
+    <h4 class="">Enter 10 numbers</h4>
+    <div class="">
+      <form class="form-data form7">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num11" placeholder="num" value="13">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num12" placeholder="num" value="18">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num13" placeholder="num" value="2">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num14" placeholder="num" value="6">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num15" placeholder="num" value="14">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num16" placeholder="num" value="7">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num17" placeholder="num" value="9">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num18" placeholder="num" value="11">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num19" placeholder="num" value="16">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num20" placeholder="num" value="38">
+        </div>      
+      </form>
+      <div class="sort-section">
+      <p id="sort7" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count7"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>
+      </div>    
+    </div>
+  </div>
+  <div class="main">
+    <h4 class="">Enter 15 numbers</h4>
+    <div class="">
+      <form class="form-data form8">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num21" placeholder="num" value="31">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num22" placeholder="num" value="82">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num23" placeholder="num" value="21">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num24" placeholder="num" value="61">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num25" placeholder="num" value="13">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num26" placeholder="num" value="31">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num27" placeholder="num" value="41">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num28" placeholder="num" value="18">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num29" placeholder="num" value="21">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num30" placeholder="num" value="41">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num31" placeholder="num" value="51">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num32" placeholder="num" value="61">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num33" placeholder="num" value="71">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num34" placeholder="num" value="1">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num35" placeholder="num" value="96">
+        </div>        
+      </form>
+      <div class="sort-section">
+      <p id="sort8" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count8"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>  
+      </div>  
+    </div>
+  </div>
+  <div class="main">
+    <h4 class="">Enter 20 numbers</h4>
+    <div class="">
+      <form class="form-data form9">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num41" placeholder="num" value="3">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num42" placeholder="num" value="8">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num43" placeholder="num" value="2">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num44" placeholder="num" value="6">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num45" placeholder="num" value="11">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num46" placeholder="num" value="91">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num47" placeholder="num" value="12">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num48" placeholder="num" value="19">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num49" placeholder="num" value="15">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num50" placeholder="num" value="17">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num51" placeholder="num" value="81">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num52" placeholder="num" value="71">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num53" placeholder="num" value="61">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num54" placeholder="num" value="13">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num55" placeholder="num" value="12">
+        </div>    
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num56" placeholder="num" value="18">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num57" placeholder="num" value="81">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num58" placeholder="num" value="16">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num59" placeholder="num" value="41">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num60" placeholder="num" value="99">
+        </div>       
+      </form>
+      <div class="sort-section">
+      <p id="sort9" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count9"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>
+      </div>    
+    </div>
+  </div>
+  <div class="main">
+    <h4 class="">Enter 25 numbers</h4>
+    <div class="">
+      <form class="form-data form10">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num71" placeholder="num" value="99">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num72" placeholder="num" value="98">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num73" placeholder="num" value="97">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num74" placeholder="num" value="96">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num75" placeholder="num" value="95">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num76" placeholder="num" value="94">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num77" placeholder="num" value="93">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num78" placeholder="num" value="1">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num79" placeholder="num" value="21">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num80" placeholder="num" value="11">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num81" placeholder="num" value="15">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num82" placeholder="num" value="18">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num83" placeholder="num" value="51">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num84" placeholder="num" value="31">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num85" placeholder="num" value="81">
+        </div>    
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num86" placeholder="num" value="31">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num87" placeholder="num" value="21">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num88" placeholder="num" value="19">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num89" placeholder="num" value="21">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num90" placeholder="num" value="51">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num91" placeholder="num" value="41">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num92" placeholder="num" value="71">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num93" placeholder="num" value="81">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num94" placeholder="num" value="31">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num95" placeholder="num" value="99">
+        </div>      
+      </form>
+      <div class="sort-section">
+      <p id="sort10" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count10"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p> 
+      </div>   
+    </div>
+  </div>
+  </section>
+
+  <section class="cases worst-case">
+  
+  <h1 class="red">Worst Case</h1>
+  <div class="main">
+    <h4 class="">Enter 5 numbers</h4>
+    <div class="">
+      <form class="form-data form11">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num1" placeholder="num" value="5">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num2" placeholder="num" value="4">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num3" placeholder="num" value="3">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num4" placeholder="num" value="2">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num5" placeholder="num" value="1">
+        </div>
+      </form>
+      <div class="sort-section">
+      <p id="sort11" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count11"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>
+      </div>
+    </div>
+  
+  </div>
+  <div class="main">
+    <h4 class="">Enter 10 numbers</h4>
+    <div class="">
+      <form class="form-data form12">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num11" placeholder="num" value="99">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num12" placeholder="num" value="98">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num13" placeholder="num" value="97">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num14" placeholder="num" value="96">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num15" placeholder="num" value="95">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num16" placeholder="num" value="94">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num17" placeholder="num" value="93">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num18" placeholder="num" value="92">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num19" placeholder="num" value="91">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num20" placeholder="num" value="90">
+        </div>      
+      </form>
+      <div class="sort-section">
+      <p id="sort12" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count12"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>    
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <h4 class="">Enter 15 numbers</h4>
+    <div class="">
+      <form class="form-data form13">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num21" placeholder="num" value="15">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num22" placeholder="num" value="14">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num23" placeholder="num" value="13">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num24" placeholder="num" value="12">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num25" placeholder="num" value="11">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num26" placeholder="num" value="10">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num27" placeholder="num" value="9">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num28" placeholder="num" value="8">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num29" placeholder="num" value="7">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num30" placeholder="num" value="6">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num31" placeholder="num" value="5">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num32" placeholder="num" value="4">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num33" placeholder="num" value="3">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num34" placeholder="num" value="2">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num35" placeholder="num" value="1">
+        </div>        
+      </form>
+      <div class="sort-section">
+      <p id="sort13" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count13"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p>  
+      </div>  
+    </div>
+  </div>
+  <div class="main">
+    <h4 class="">Enter 20 numbers</h4>
+    <div class="">
+      <form class="form-data form14">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num41" placeholder="num" value="20">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num42" placeholder="num" value="19">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num43" placeholder="num" value="18">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num44" placeholder="num" value="17">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num45" placeholder="num" value="16">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num46" placeholder="num" value="15">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num47" placeholder="num" value="14">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num48" placeholder="num" value="13">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num49" placeholder="num" value="12">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num50" placeholder="num" value="11">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num51" placeholder="num" value="10">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num52" placeholder="num" value="9">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num53" placeholder="num" value="8">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num54" placeholder="num" value="7">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num55" placeholder="num" value="6">
+        </div>    
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num56" placeholder="num" value="5">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num57" placeholder="num" value="4">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num58" placeholder="num" value="3">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num59" placeholder="num" value="2">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num60" placeholder="num" value="1">
+        </div>       
+      </form>
+      <div class="sort-section">
+      <p id="sort14" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count14"><span class="head">No. of Iteration:</span><span class="sort-value"></span></p> 
+      </div>   
+    </div>
+  </div>
+  <div class="main">
+    <h4 class="">Enter 25 numbers</h4>
+    <div class="">
+      <form class="form-data form15">
+        <div class="form-group col-sm-1 col-sm-offset-1">
+          <input type="text" class="form-control" id="num71" placeholder="num" value="25">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num72" placeholder="num" value="24">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num73" placeholder="num" value="23">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num74" placeholder="num" value="22">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num75" placeholder="num" value="21">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num76" placeholder="num" value="20">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num77" placeholder="num" value="19">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num78" placeholder="num" value="18">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num79" placeholder="num" value="17">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num80" placeholder="num" value="16">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num81" placeholder="num" value="15">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num82" placeholder="num" value="14">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num83" placeholder="num" value="13">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num84" placeholder="num" value="12">
+        </div>  
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num85" placeholder="num" value="11">
+        </div>    
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num86" placeholder="num" value="10">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num87" placeholder="num" value="9">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num88" placeholder="num" value="8">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num89" placeholder="num" value="7">
+        </div> 
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num90" placeholder="num" value="6">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num91" placeholder="num" value="5">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num92" placeholder="num" value="4">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num93" placeholder="num" value="3">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num94" placeholder="num" value="2">
+        </div>
+        <div class="form-group col-sm-1">
+          <input type="text" class="form-control" id="num95" placeholder="num" value="1">
+        </div>      
+      </form>
+      <div class="sort-section">
+      <p id="sort15" class="text-center"><span class="head">Sorted Array:</span><span class="sort-value"></span></p>
+      <p class="comparison-count15"><span class="head">Instruction Count:</span><span class="sort-value"></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cases algo">
+        
+  <div class="window">
+      <div class="icons"><span></span></div>
+      <div class="title">Algorithm</div>
+      <pre class="lang-c">
+  <code>
+ COUNTING-SORT(A, B, k) 
+ k: upper range of input numbers
+1. for i <- 0 to k 
+2. 	do C[i] <- 0 
+3. for j <- 1 to length[A] 
+4. 	do C[A[j]] <- C[A[j]] + 1 
+5. for i <- 1 to k 
+6. 	do C[i] <- C[i] + C[i - 1] 
+7. for j <- length[A] downto 1 
+8. 	do B[C[A[j]]] <- A[j] 
+9. 	C[A[j]] <- C[A[j]] - 1
+
+  </code></pre>
+    </div>
+      </section>
+      <section class="cases algo">
+  <div class="window">
+      <div class="icons"><span></span></div>
+      <div class="title">Program</div>
+      <pre class="lang-c">
+  <code>
+  #include &lt;stdio.h&gt;
+  int count=0;
+void counting_sort(int A[], int k, int n)
+{
+    int i, j;
+    int B[15], C[100];
+	count++;
+    for (i = 0; i &lt= k; i++)
+	{
+        C[i] = 0;
+		count++;
+		}
+		count++;
+    for (j = 1; j &lt= n; j++){
+        C[A[j]] = C[A[j]] + 1;
+		count++;
+		}
+		count++;
+    for (i = 1; i &lt= k; i++){
+        C[i] = C[i] + C[i-1];
+		count++;
+		}
+		count++;
+    for (j = n; j >= 1; j--)
+    {
+        count++;
+		B[C[A[j]]] = A[j];
+		count++;
+        C[A[j]] = C[A[j]] - 1;
+		count++;
+    }
+    printf("The Sorted array is : ");
+    for (i = 1; i &lt= n; i++)
+        printf("%d ", B[i]);
+}
+/*  End of counting_sort()  */
+ 
+/*  The main() begins  */
+int main()
+{
+    int n, k = 0, A[15], i;
+    printf("Enter the number of input : ");
+    scanf("%d", &n);
+    printf("\nEnter the elements to be sorted :\n");
+    for (i = 1; i &lt= n; i++)
+    {
+        scanf("%d", &A[i]);
+        if (A[i] > k) {
+            k = A[i];
+        }
+    }
+    counting_sort(A, k, n);
+	printf("insrtructions count=%d",count);
+    printf("\n");
+    return 0;
+}
+          
+  </code></pre>
+      </div>
+      </section>
+
+              <section class="button-section">
+                <div class="sort col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-one">Click to Sort</a> </div>
+            </section>                 
+              
+              <section class="cases algo table-data">           
+                <div class="table">
+                
+                    <div class="row header">
+                      <div class="cell">
+                        
+                      </div>
+                      <div class="cell green">
+                        Best Case
+                      </div>
+                      <div class="cell blue">
+                        Average Case
+                      </div>
+                      <div class="cell red">
+                        Worst Case
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="cell no-of-array">5 Numbers</div>
+                      <div class="cell comparison-count1"><span class="sort-value"></span></div>
+                      <div class="cell comparison-count6"><span class="sort-value"></span></div>
+                      <div class="cell comparison-count11"><span class="sort-value"></span></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell no-of-array">10 Numbers</div>
+                        <div class="cell comparison-count2"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count7"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count12"><span class="sort-value"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="cell no-of-array">15 Numbers</div>
+                        <div class="cell comparison-count3"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count8"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count13"><span class="sort-value"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="cell no-of-array">20 Numbers</div>
+                        <div class="cell comparison-count4"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count9"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count14"><span class="sort-value"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="cell no-of-array">25 Numbers</div>
+                        <div class="cell comparison-count5"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count10"><span class="sort-value"></span></div>
+                        <div class="cell comparison-count15"><span class="sort-value"></span></div>
+                      </div>                          
+                </div>    
+            </section>
+            <section class="cases algo comp-graph">
+              <img src="images/compare-graph.jpg" class="img-chart">
+          </section>            
+          <section class="cases algo">
+            <div id="chartContainer" style="height: 280px; width: 100%;">
+            </div>
+        </section>  
+ <section class="cases algo comp-graph">
+              <img src="images/counting.jpg" style="height: 280px; width: 100%;">
+          </section> 		
+        <section class="cases algo">
+        
+        </section>                
+          
+   
+        
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/canvasjs.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
