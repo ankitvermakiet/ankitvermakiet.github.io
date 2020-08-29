@@ -97,7 +97,7 @@ DrawChart = function(){
    var chart = new CanvasJS.Chart("chartContainer",
     {
       title:{
-      text: "Improved Bubble Sort : Running Time"  
+      text: "Selection Sort : Running Time"  
       },
       data: [
       {        
