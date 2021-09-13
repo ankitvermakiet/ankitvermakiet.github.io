@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var jsonobject={"name":"ankit","age":38}
+jsonobject.age=35;
+
+document.write(jsonobject.name+"--"+jsonobject.age+"</br>");
+var jsonstr=JSON.stringify(jsonobject);
+document.write(jsonstr+"</br>");
+
+
+var newjobj=JSON.parse(jsonstr);
+document.write(newjobj+"</br>");
+
+document.write(jsonobject.name);
+
+// code to send on other page
+window.open("ex4.html?val="+jsonstr);
+
+var jsonobj=[{
+		"naam": "2",
+		"umar": "3",
+		"gender": "4"
+	},
+	{
+		"naam": "5",
+		"umar": "6",
+		"gender": "7"
+	},
+	{
+		"naam": "1",
+		"umar": "2",
+		"gender": "3"
+	}
+];
+for(let i=0;i<jsonobj.length;i++)
+{document.write(jsonobj[i].naam+"</br>");}
+document.write(jsonobj[0].naam);
+document.write(jsonobj[1].umar);
+document.write(jsonobj[2].gender);
+</script>
+<style>
+
+body { background-color:powderblue;}
+h1{ color:red;}
+p{ color: green;}
+</style>
+</head>
+<body  >
+<h1 >About MCA</h1>
+<p >
+You cannot omit quotes around an attribute value 
+if the value contains spaces.
+</p>
+<p title='About "MCA" KIET'>
+Paragraph 2 with double quotes.
+</p>
+<p><b>
+If you move the mouse over the paragraph above,
+your browser will only display the first word from the title.
+</b></p>
+</body>
+</html> 
+
